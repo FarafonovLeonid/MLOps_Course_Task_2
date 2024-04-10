@@ -1,0 +1,24 @@
+[project]
+name = "MLOps_Course_Task_2"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "FarafonovLeonid", email = "151352490+FarafonovLeonid@users.noreply.github.com"},
+]
+dependencies = [
+    "pandas>=2.2.1",
+    "numpy>=1.26.4",
+    "scikit-learn>=1.4.2",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[project.optional-dependencies]
+my_group = [
+    "ruff>=0.3.5",
+    "pre-commit>=3.7.0",
+]
+[tool.pdm]
+distribution = false
